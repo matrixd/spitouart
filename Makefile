@@ -175,7 +175,7 @@ LDFLAGS = -Wl,-Map=$(OUTDIR)/$(TARGET).map,--cref,--gc-sections
 LDFLAGS += -lc
 LDFLAGS += $(MATH_LIB)
 LDFLAGS += -lc -lgcc
-LDFLAGS += $(CPLUSPLUS_LIB)
+#LDFLAGS += $(CPLUSPLUS_LIB)
 LDFLAGS += $(patsubst %,-L%,$(EXTRA_LIBDIRS))
 LDFLAGS += $(patsubst %,-l%,$(EXTRA_LIBS)) 
 
